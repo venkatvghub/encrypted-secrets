@@ -41,7 +41,7 @@ type EncryptedSecret struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Data   map[string]string     `json:"data,omitempty"`
+	Data   map[string]string     `json:"data"`
 	Status EncryptedSecretStatus `json:"status,omitempty"`
 }
 
